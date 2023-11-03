@@ -4,11 +4,11 @@ nav {
 	box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }
 
-.Hero--photo {
+.hero--photo {
 	padding: 26px 77px;
 }
 
-.Hero--title {
+.hero--header {
 	/* Online Experiences */
 	padding-left: 36px;
 	font-family: "Poppins";
@@ -19,7 +19,7 @@ nav {
 	color: #000000;
 }
 
-.Hero--text {
+.hero--text {
 	/* Join unique interactive activities led by one-of-a-kind hosts—all without leaving home. */
 
 	padding-left: 36px;
