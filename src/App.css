@@ -1,42 +1,32 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+nav {
+	display: flex;
+	padding: 22px 30px;
+	box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.Hero--photo {
+	padding: 26px 77px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Hero--title {
+	/* Online Experiences */
+	padding-left: 36px;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 110%;
+	color: #000000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
+.Hero--text {
+	/* Join unique interactive activities led by one-of-a-kind hosts—all without leaving home. */
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+	padding-left: 36px;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 110%;
+	color: #222222;
 }
