@@ -2,7 +2,7 @@ import photo from "../assets/photo-grid.png";
 
 export default function Hero() {
 	return (
-		<section>
+		<section className="hero">
 			<img
 				className="hero--photo"
 				src={photo}
