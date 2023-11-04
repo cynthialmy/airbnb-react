@@ -1,10 +1,11 @@
 import star from "/assets/star.png";
 
 export default function Card(props) {
+	const item = props.item;
 	let badgeText;
-	if (props.openSpots === 0) {
+	if (item.openSpots === 0) {
 		badgeText = "SOLD OUT";
-	} else if (props.location === "Online") {
+	} else if (item.location === "Online") {
 		badgeText = "ONLINE";
 	}
 	return (
@@ -12,19 +13,19 @@ export default function Card(props) {
 			{badgeText && <div className="card--badge">{badgeText}</div>}
 			<img
 				className="card--image"
-				src={`/assets/${props.img}`}
+				src={`/assets/${item.coverImg}`}
 				alt="Katie Zaferes"
 				width="176px"
 			/>
 			<div className="card--stats">
 				<img src={star} alt="5 stars" width="14px" height="14px" />
-				<span>{props.rating} </span>
-				<span className="gray">({props.reviewCount}) • </span>
-				<span className="gray">{props.location}</span>
+				<span>{item.stats.badgeTextrating} </span>
+				<span className="gray">({item.stats.reviewCount}) • </span>
+				<span className="gray">{item.location}</span>
 			</div>
-			<p>{props.title}</p>
+			<p>{item.title}</p>
 			<p>
-				<span className="bold">From ${props.price}</span> / person
+				<span className="bold">From ${item.price}</span> / person
 			</p>
 		</div>
 	);
